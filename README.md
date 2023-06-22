@@ -1,24 +1,59 @@
-# README
+##アプリケーション名
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+melody-memory
 
-Things you may want to cover:
 
-* Ruby version
+##アプリケーション概要
 
-* System dependencies
+音楽を媒体として思い出の共有ができる。
 
-* Configuration
 
-* Database creation
+##URL
 
-* Database initialization
+###テスト用アカウント
 
-* How to run the test suite
+  管理者アカウント
 
-* Services (job queues, cache servers, search engines, etc.)
+  ユーザーアカウント
 
-* Deployment instructions
 
-* ...
+##利用方法
+
+###楽曲投稿（管理者のみ）
+  1.トップページのヘッダーから管理者のアカウントでログインを行う
+  2.曲名、アーティスト名、ジャケット画像、発売年、楽曲が視聴できるリンクを入力し投稿する
+    （ジャケット画像、発売年、リンクは任意とする）
+  
+###コメント
+  1.トップページのヘッダーからユーザーのアカウントでログインを行う
+  2.管理者が投稿済みの楽曲をクリックすると詳細ページに遷移する
+  3.楽曲に対しコメント投稿フォームからコメントする
+
+
+##アプリケーションを作成した背景
+
+SNS文化に親しみのない30代後半から上の世代をメインターゲットとして、現在でなく過去の思い出を、音楽を媒体として共有できる場を提供することを目的として、SNSアプリケーションを開発することにした。
+
+
+##今後実装予定の機能
+
+  ・ユーザーが楽曲に対しタグ付けを行う機能
+
+  ・ユーザーが管理者に対しリクエストを送れる機能
+
+
+##洗い出した要件
+
+[要件を定義したシート](https://docs.google.com/spreadsheets/d/1hRWk7jhpUBAyQFVHLB6gfUU8SlEs5cfG1bPz4N0edJI/edit#gid=982722306)
+
+
+##データベース設計
+
+[ER図](https://gyazo.com/369c82e236741d1f8c0c177a9ce1483b)
+
+
+##工夫したポイント
+
+  ・利用に際し個人情報を極力必要としない点
+
+  ・楽曲の投稿を管理者（運営側）にしかできないようにしている点
